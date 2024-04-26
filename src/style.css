@@ -1,0 +1,60 @@
+@import url("../node_modules/bootstrap/scss/_variables.scss");
+:root {
+  --blue: #46F4DB;
+  --green: #57D272;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.link {
+  font-family: "Muller-Bold";
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 0;
+}
+.link:hover {
+  color: var(--blue);
+}
+.link:active {
+  --bs-btn-active-color: var(--green);
+  --bs-btn-active-border-color: var(--green);
+}
+
+.btn {
+  --bs-btn-font-size: 0;
+}
+
+.button-text {
+  font-size: 16px;
+  font-family: "Muller-Bold";
+}
+
+.header-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.header-button:hover {
+  background-color: var(--blue);
+  color: black;
+}
+.header-button:active {
+  color: black;
+  background-color: var(--green);
+}
+
+@media (max-width: 320px) {
+  .btn-link {
+    font-size: 16px;
+  }
+}
+@font-face {
+  font-family: "Muller-Bold";
+  src: url("../fonts/Muller-Trial-Bold.ttf");
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
