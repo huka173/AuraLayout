@@ -3,6 +3,10 @@
   --blue: #46F4DB;
   --green: #57D272;
   --gradient: linear-gradient(var(--blue) 27%, var(--green) 100%);
+  --red: #D13130;
+  --gray-light: #EDEDF2;
+  --gray-middle: #95959D;
+  --gray-dark: #717178;
 }
 
 .header-logo {
@@ -37,6 +41,7 @@
   background-color: black;
   color: white;
   text-decoration: none;
+  border: none;
 }
 .header-button:hover {
   background-color: var(--blue);
@@ -64,6 +69,7 @@
 
 .btn-about {
   background: var(--gradient);
+  border: none;
 }
 .btn-about:hover {
   background: var(--blue);
@@ -89,6 +95,7 @@
 .btn-text-about {
   font-size: 20px;
   font-family: "Muller-Bold";
+  border: none;
 }
 
 .about-img::after {
@@ -99,6 +106,105 @@
   content: " ";
   position: absolute;
   background-repeat: no-repeat;
+}
+
+.auction-text {
+  font-size: 60px;
+  font-family: "Muller-Bold", sans-serif;
+}
+
+.live-auction {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+.live-auction .bi-dot {
+  color: var(--red);
+}
+.live-auction .live-auction-text {
+  font-size: 16px;
+  font-family: "RussoOne", sans-serif;
+  color: var(--red);
+}
+
+.auction-img {
+  width: 460px;
+  height: 460px;
+}
+
+.card-auction {
+  width: 228px;
+  background-color: var(--gray-light);
+}
+.card-auction .card-imagine {
+  width: 48px;
+  height: 48px;
+}
+.card-auction .card-text {
+  font-family: "Muller-Bold", sans-serif;
+  font-size: 20px;
+}
+
+.auction-name-nft {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.card-auction-money {
+  width: 300px;
+  border: 1px solid var(--gray-light);
+  background-color: var(--gray-light);
+}
+.card-auction-money .auction-money-h {
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.card-auction-money .money-crypto {
+  font-size: 48px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.card-auction-money .money-dollar {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--gray-middle);
+}
+.card-auction-money .money-dollar .money {
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+
+.auction-time {
+  background-color: black;
+}
+.auction-time .time-h {
+  color: white;
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.auction-time .time {
+  color: white;
+  font-size: 48px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.auction-time .clock {
+  color: white;
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+
+.btn-auction {
+  width: 300px;
+  background: var(--gradient);
+  border: none;
+}
+.btn-auction .btn-auction-text {
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.btn-auction:hover {
+  background: var(--blue);
+}
+.btn-auction:active {
+  background: var(--green);
 }
 
 @media (max-width: 1920px) {
@@ -120,7 +226,27 @@
 @media (max-width: 1024px) {
   .about {
     height: 600px;
-    background-image: none;
+    background-image: url("../images/stickers_hero.png");
+    background-position: 900%;
+    background-repeat: no-repeat;
+  }
+  .live-auction-text {
+    font-size: 12px;
+  }
+  .auction-text {
+    font-size: 30px;
+  }
+  .auction-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    height: 500px;
+    background-image: url("../images/stickers_hero.png");
+    background-position: -250%;
+    background-repeat: no-repeat;
   }
 }
 @media (max-width: 320px) {
@@ -129,6 +255,9 @@
   }
   .about {
     height: 500px;
+    background-image: url("../images/stickers_hero.png");
+    background-position: 900%;
+    background-repeat: no-repeat;
   }
 }
 @font-face {
