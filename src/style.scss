@@ -3,6 +3,7 @@
 :root {
     --blue: #46F4DB;
     --green: #57D272;
+    --gradient: linear-gradient(var(--blue) 27%, var(--green) 100%);
 }
 
 .header-logo {
@@ -51,10 +52,105 @@
     }
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    height: 681px;
+    background-color: black;
+    background-image: url('../images/stickers_hero.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.h-about {
+    font-family: 'RussoOne', sans-serif;
+    color: white;
+}
+
+.btn-about {
+    background: var(--gradient);
+
+    &:hover {
+        background: var(--blue);
+    }
+
+    &:active {
+        background: var(--green);
+    }
+}
+
+.btn-about-author {
+    background-color: black;
+    color: white;
+    border: 5px solid var(--blue);
+
+    &:hover {
+        color: black;
+        background: var(--blue);
+    }
+    
+    &:active {
+        border: 5px solid var(--green);
+        background: var(--green);
+    }
+}
+
+.btn-text-about {
+    font-size: 20px;
+    font-family: 'Muller-Bold';
+}
+
+.about-img {
+
+    &::after {
+        overflow-x: hidden;
+        background-image: url('../images/stickers_hero.png');
+        width: 100%;
+        height: 100%;
+        content: " ";
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1920px) {
+
+    .about {
+        height: 600px;
+        background-image: url('../images/stickers_hero.png');
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+
+    .about {
+        height: 600px;
+        background-image: url('../images/stickers_hero.png');
+        background-position: 150%;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+
+    .about {
+        height: 600px;
+        background-image: none;
+    }
+    
+}
 
 @media (max-width: 320px) {
     .btn-link {
         font-size: 16px;
+    }
+
+    .about {
+        height: 500px;
     }
 }
 
@@ -62,4 +158,10 @@
     font-family: 'Muller-Bold';
     src: url('../fonts/Muller-Trial-Bold.ttf');
     font-weight: bold;
+}
+
+@font-face {
+    font-family: 'RussoOne';
+    src: url('../fonts/RussoOne-Regular.ttf');
+    font-weight: 400;
 }
