@@ -8,6 +8,7 @@
     --gray-light: #EDEDF2;
     --gray-middle: #95959D;
     --gray-dark: #717178;
+    --black: #07060B;
 }
 
 .header-logo {
@@ -18,7 +19,7 @@
     font-family: 'Muller-Bold';
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--black);
     border-radius: 0;
 
     &:hover {
@@ -41,18 +42,18 @@
 }
 
 .header-button {
-    background-color: black;
+    background-color: var(--black);
     color: white;
     text-decoration: none;
     border: none;
 
     &:hover {
         background-color: var(--blue);
-        color: black;
+        color: var(--black);
     }
 
     &:active {
-        color: black;
+        color: var(--black);
         background-color: var(--green);
     }
 }
@@ -61,7 +62,7 @@
     display: flex;
     align-items: center;
     height: 681px;
-    background-color: black;
+    background-color: var(--black);
     background-image: url('../images/stickers_hero.png');
     background-position: right;
     background-repeat: no-repeat;
@@ -86,12 +87,12 @@
 }
 
 .btn-about-author {
-    background-color: black;
+    background-color: var(--black);
     color: white;
     border: 5px solid var(--blue);
 
     &:hover {
-        color: black;
+        color: var(--black);
         background: var(--blue);
     }
     
@@ -193,7 +194,7 @@
 }
 
 .auction-time {
-    background-color: black;
+    background-color: var(--black);
 
     .time-h {
         color: white;
@@ -233,6 +234,85 @@
         background: var(--green);
     }
 
+}
+
+.h-other-auction {
+    font-size: 20px;
+    font-family: 'RussoOne', sans-serif;
+}
+
+
+.card-other-auction-name {
+
+    .card-other-auction-ava {
+        width: 24px;
+        height: 24px;
+    }
+
+    .card-other-auction-author {
+        font-size: 16px;
+    }
+}
+
+
+.card-other-auction-container {
+    width: 300px;
+    height: 300px;
+
+    .card-other-auction-top {
+        background-color: var(--gray-light);
+    }
+
+    .card-other-auction {
+        background-color: var(--black);
+
+        .card-other-auction-name-nft {
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .card-other-auction-money {
+            color: var(--blue);
+            font-size: 20px;
+            font-family: 'Muller-Bold', sans-serif;
+        }
+
+        .card-other-auction-time {
+            color: var(--gray-middle);
+            font-size: 16px;
+            font-family: 'Muller-Bold', sans-serif;
+        }
+    }
+
+    .img-card-auction {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.btn-other-auction {
+    background-color: white;
+    color: white;
+    border: 5px solid var(--blue);
+    width: 200px;
+
+    &:hover {
+        color: var(--black);
+        background: var(--blue);
+    }
+    
+    &:active {
+        border: 5px solid var(--green);
+        background: var(--green);
+    }
+
+    .btn-text-other-auction {
+        color: var(--black);
+        font-size: 20px;
+        font-family: 'Muller-Bold', sans-serif;
+    }
 }
 
 @media (max-width: 1920px) {
