@@ -388,6 +388,41 @@
     }
 }
 
+.h-best-seller {
+    font-size: 60px;
+    font-family: 'RussoOne', sans-serif;
+    color: white;
+}
+
+.card-best-seller {
+    background-color: var(--gray-light);
+}
+
+.card-ava {
+    width: 24px;
+    height: 24px;
+}
+
+.card-h {
+    font-size: 16px;
+    font-family: 'Muller-Bold', sans-serif;
+}
+
+.card-name {
+    font-size: 48px;
+    font-family: 'Muller-Bold', sans-serif;
+}
+
+.card-money {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    span {
+        color: var(--gray-middle);
+    }
+}
+
 @media (max-width: 1920px) {
 
     .about {
@@ -432,7 +467,11 @@
         height: 300px;
     }
 
-    
+    .card-name {
+        font-size: 20px;
+        font-family: 'Muller-Bold', sans-serif;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -441,6 +480,11 @@
         background-image: url('../images/stickers_hero.png');
         background-position: -250%;
         background-repeat: no-repeat;
+    }
+
+    .left-card {
+        width: 100px;
+        height: 100px;
     }
 }
 
