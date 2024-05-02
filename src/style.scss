@@ -9,6 +9,7 @@
     --gray-middle: #95959D;
     --gray-dark: #717178;
     --black: #07060B;
+    --gray-deep: #37373E;
 }
 
 .header-logo {
@@ -423,6 +424,53 @@
     }
 }
 
+.info-best-seller {
+    background-color: var(--gray-deep);
+}
+
+.h-info-best-seller {
+    font-family: 'Muller-Bold', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.stage {
+    h2 {
+        font-size: 18px;
+        font-family: sans-serif;
+        color: white;
+    }
+}
+
+footer {
+    background-color: var(--blue);
+}
+
+.footer-link {
+    font-family: 'Muller-Bold';
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 0;
+
+    &:hover {
+        color: var(--gray-deep);
+    }
+
+    &:active {
+        --bs-btn-active-color: var(--black); 
+        --bs-btn-active-border-color: var(--black);
+    }
+}
+
+.reserved {
+    h1 {
+        font-size: 12px;
+        font-family: sans-serif;
+        color: var(--gray-light);
+    }
+}
+
 @media (max-width: 1920px) {
 
     .about {
@@ -485,6 +533,11 @@
     .left-card {
         width: 100px;
         height: 100px;
+    }
+
+    
+    .img-info-best-seller {
+        width: 300px;
     }
 }
 
