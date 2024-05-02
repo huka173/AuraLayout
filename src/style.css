@@ -272,6 +272,71 @@
   font-family: "Muller-Bold", sans-serif;
 }
 
+.h1-become-author {
+  font-size: 60px;
+  font-family: "RussoOne", sans-serif;
+}
+
+.p1-become-author {
+  font-size: 20px;
+  font-family: "RussoOne", sans-serif;
+}
+
+.p2-become-author {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.label-for-file {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.bi-plus-circle:hover {
+  fill: var(--blue);
+}
+.bi-plus-circle:active {
+  fill: var(--green);
+}
+
+.text-type-file {
+  color: var(--gray-middle);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.form-become-author {
+  background-color: var(--gray-light);
+}
+
+.telega-input {
+  background-color: var(--gray-light);
+  width: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.telega-input::placeholder {
+  color: var(--gray-dark);
+  font-size: 20px;
+}
+
+.btn-become-author {
+  width: 50%;
+  background-color: var(--blue);
+}
+.btn-become-author .text-become-author {
+  font-size: 20px;
+  font-family: "Muller-Bold", sans-serif;
+}
+.btn-become-author:hover {
+  background: var(--gradient);
+}
+.btn-become-author:active {
+  background: var(--green);
+}
+
 @media (max-width: 1920px) {
   .about {
     height: 600px;
